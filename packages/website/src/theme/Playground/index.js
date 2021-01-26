@@ -22,7 +22,7 @@ function Playground({ children, theme, transformCode, ...props }) {
         onClick={() => setShowEditor(!showEditor)}
       >
         <span>Live Editor</span>
-        <span style={{ marginLeft: 'auto', fontSize: '85%' }}>点击展开或收拢</span>
+        <span style={{ marginLeft: 'auto', fontSize: '85%' }}>点击展开或收起</span>
       </div>
       <LiveEditor className={styles.playgroundEditor} style={{ display: showEditor ? undefined : 'none' }} />
 
@@ -32,7 +32,7 @@ function Playground({ children, theme, transformCode, ...props }) {
         onClick={() => setShowPreview(!showPreview)}
       >
         <span>Preview</span>
-        <span style={{ marginLeft: 'auto', fontSize: '85%' }}>点击展开或收拢</span>
+        <span style={{ marginLeft: 'auto', fontSize: '85%' }}>点击展开或收起</span>
       </div>
       <div className={styles.playgroundPreview} style={{ display: showPreview ? undefined : 'none' }}>
         <LivePreview />
